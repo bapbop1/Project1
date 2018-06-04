@@ -1,0 +1,18 @@
+<div class="col-md-3 col-sm-6">
+  <div class="products">
+    <div class="thumbnail">
+      <%= link_to product_path(product) do %>
+        <%= gravatar_for product %>
+      <% end %>
+    </div>
+    <div class="productname"><%= product.name %></div>
+    <h4 class="price_old"><%= number_format product.price %></h4>
+    <h4 class="price"><%= number_format product.new_price %></h4>
+    <div class="button_group">
+      <%= link_to t("add_to_cart"), add_to_cart_path(id: product),
+        remote: true,method: :post, class: "button add-cart" %>
+      <button class="button compare" type="button"><i class="fa fa-exchange"></i></button>
+      <button class="button wishlist" type="button"><i class="fa fa-heart-o"></i></button>
+    </div>
+  </div>
+</div>

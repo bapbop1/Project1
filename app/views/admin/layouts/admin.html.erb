@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= full_title yield :title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag "admin/admin", media: "all",
+      "data-turbolinks-track": "reload" %>
+    <%= javascript_include_tag "admin/admin",
+      "data-turbolinks-track": "reload" %>
+  </head>
+  <body>
+    <div class="container-scroller">
+      <%= render "admin/layouts/header" %>
+      <div class="container-fluid page-body-wrapper">
+        <%= render "admin/layouts/col_right" %>
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <%= yield %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

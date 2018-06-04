@@ -1,0 +1,15 @@
+<div class="special-item">
+  <div class="product-image">
+    <%= link_to product_path(product_new) do %>
+    <%= gravatar_for product_new %>
+    <% end %>
+  </div>
+  <div class="product-info">
+    <p>
+      <%= product_new.name %>
+    </p>
+    <h5 class="price">
+      <%= number_format product_new.new_price %>
+    </h5>
+  </div>
+</div>

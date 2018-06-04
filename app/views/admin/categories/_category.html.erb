@@ -1,0 +1,12 @@
+<tr>
+  <td>
+    <%= category.name %>
+  </td>
+  <td>
+    <%= category.status %>
+  </td>
+  <td>
+    <%= link_to t("edit"), edit_admin_category_path(category),
+      class: "btn btn-primary" %>
+  </td>
+</tr>

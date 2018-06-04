@@ -1,0 +1,7 @@
+<% if @status == false %>
+  alert('<%= t "comments_error" %>')
+<% else %>
+  alert('<%= t "comments" %>')
+  $('.user_comment').html('<%= j(render partial: "comments/comment",collection: @support.comments, as: :comment) %>')
+  $('#comment_description').val('')
+<% end %>

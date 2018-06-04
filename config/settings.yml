@@ -1,0 +1,10 @@
+validate:
+  email_max_length: 255
+  name_max_length: 255
+  min_length_password: 6
+  content_max_length: 50
+settings:
+  per_page: 4
+  limit_product: 12
+  limit_product_slibar: 3
+  max_value_input: 1

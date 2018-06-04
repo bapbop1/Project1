@@ -1,0 +1,2 @@
+class ListAttribute < ApplicationRecord
+end

@@ -1,0 +1,53 @@
+<div class="clearfix"></div>
+<div class="footer">
+  <div class="footer-info">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="footer-logo">
+            <%= link_to root_path do %>
+              <%= image_tag("logo.png", alt: t("shop")) %>
+            <% end %>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <h4 class="title"><%= t "contac" %>
+            <strong><%= t "infomation" %></strong>
+          </h4>
+          <p><%= t "email" %> : <%= t "value_email" %></p>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <h4 class="title"><%= t "customer" %>
+            <strong> <%= t "support" %></strong>
+          </h4>
+          <ul class="support">
+            <li><a href="#"><%= t "infomation" %></a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h4 class="title"><%= t "get_out" %>
+            <strong><%= t "newsletter" %> </strong>
+          </h4>
+          <p><%= t "lorem_first" %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright-info">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p><%= t "designed" %></p>
+        </div>
+        <div class="col-md-6">
+          <ul class="social-icon">
+            <li><a href="#" class="linkedin"></a></li>
+            <li><a href="#" class="google-plus"></a></li>
+            <li><a href="#" class="twitter"></a></li>
+            <li><a href="#" class="facebook"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+<% provide :title, t("login") %>
+<div class="page-index">
+  <div class="container">
+    <p>
+      <%= t "acount" %>
+    </p>
+  </div>
+</div>
+<div class="container_fullwidth">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="checkout-page">
+          <ol class="checkout-steps">
+            <li class="steps active">
+              <a href="#" class="step-title">
+              <%= t "acount" %>
+              </a>
+              <div class="step-description">
+                <div class="row">
+                   <%= render "login" %>
+                </div>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix">
+    </div>
+  </div>
+</div>
