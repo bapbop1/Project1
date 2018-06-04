@@ -1,9 +1,7 @@
-<%= form_for [:admin, @category] do |f| %>
-  <%= render "admin/shared/error_messages", object: f.object %>
+<%= form_for([:admin,@category]) do |f| %>
+  <%= render 'admin/shared/error_messages' %>
   <%= f.label :name %>
-  <%= f.text_field :name, class: "form-control" %>
-  <%= f.label :status %>
-  <%= f.select :status, Category.statuses.keys, {}, {class: "form-control"} %>
+  <%= f.text_field :name, class: 'form-control' %>
   <div class="center">
     <%= f.submit yield(:button_text), class: "btn btn-primary" %>
   </div>

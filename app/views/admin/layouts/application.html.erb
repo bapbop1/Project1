@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= full_title(yield :title) %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag "admin/login/admin", media: "all",
+      "data-turbolinks-track": "reload" %>
+  </head>
+  <body>
+    <div class="cont">
+        <div class="demo">
+            <%= yield %>
+        </div>
+        <div class="info_admin">
+            <h1>Cán bộ hỗ trợ trực tiếp: Nguyễn Xuân Hưng &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-phone" aria-hidden="true"></i>&nbsp;0934578767 </h1>
+            <h1>Bộ phận CSKH: 1900 1069</h1>
+            <h1>Hỗ trợ khách hàng các ngày trong tuần từ thứ 2 đến Chủ nhật (từ 8h00 – 22h00 hàng ngày)</h1>
+        </div>
+    </div>
+  </body>
+</html>
