@@ -1,0 +1,3 @@
+$('.option-cart-item').html('<%= j(render("products/cart_header")) %>')
+$('.cart_no').text('<%= @count_product_cart %>')
+toastr.success('<%= t "success_add_cart" %>')

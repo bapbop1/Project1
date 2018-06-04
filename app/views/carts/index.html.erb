@@ -1,0 +1,90 @@
+<% provide :title, t("cart") %>
+<div class="container_fullwidth">
+  <div class="container shopping-cart">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="title">
+          <%= t "shopping_cart" %>
+        </h3>
+        <div class="clearfix">
+        </div>
+        <table class="shop-table" width="100%">
+          <thead>
+            <tr>
+              <th>
+                <%= t "images" %>
+              </th>
+              <th>
+                <%= t "details" %>
+              </th>
+              <th>
+                <%= t "price" %>
+              </th>
+              <th>
+                <%= t "quantity" %>
+              </th>
+              <th>
+                <%= t "price" %>
+              </th>
+              <th>
+                <%= t "price" %>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @products_cart.each do |product,quantity|%>
+            <tr>
+              <td>
+                <%= gravatar_for product %>
+              </td>
+              <td>
+                <div class="shop-details">
+                  <div class="productname">
+                    <%= product.name %>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <h5>
+                  <%= number_format product.price %>
+                </h5>
+              </td>
+              <td>
+               <%= number_field_tag "quantity", quantity %>
+              </td>
+              <td>
+                <h5>
+                  <strong class="red">
+                 <%= price_total_cart product, quantity %>
+                  </strong>
+                </h5>
+              </td>
+              <td>
+                <a href="#">
+                <%= image_tag "remove.png" %>
+                </a>
+              </td>
+            </tr>
+            <% end %>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="6">
+                <button class="pull-left">
+                  <%= t "continue_shoping" %>
+                </button>
+                <button class=" pull-right">
+                  <%= t "updates_shoping" %>
+                </button>
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+        <div class="clearfix">
+        </div>
+      </div>
+    </div>
+    <div class="clearfix">
+    </div>
+  </div>
+</div>

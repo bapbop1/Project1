@@ -7,6 +7,7 @@ class CreateUsers < ActiveRecord::Migration[5.1]
       t.date :birthday
       t.integer :role
       t.string :remember_digest
+      t.string :images
 
       t.timestamps
     end

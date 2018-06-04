@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180524023506) do
+ActiveRecord::Schema.define(version: 20180601014243) do
 
   create_table "categories", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "name"
@@ -27,6 +27,14 @@ ActiveRecord::Schema.define(version: 20180524023506) do
     t.datetime "updated_at", null: false
     t.index ["product_id"], name: "index_comments_on_product_id"
     t.index ["user_id"], name: "index_comments_on_user_id"
+  end
+
+  create_table "images", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.text "image_url"
+    t.bigint "product_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["product_id"], name: "index_images_on_product_id"
   end
 
   create_table "list_attributes", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -60,6 +68,9 @@ ActiveRecord::Schema.define(version: 20180524023506) do
     t.boolean "status"
     t.integer "price"
     t.integer "new_price"
+    t.integer "quantity"
+    t.integer "discount"
+    t.string "image"
     t.text "description"
     t.text "attribute"
     t.float "average_point", limit: 24
@@ -92,6 +103,7 @@ ActiveRecord::Schema.define(version: 20180524023506) do
 
   add_foreign_key "comments", "products"
   add_foreign_key "comments", "users"
+  add_foreign_key "images", "products"
   add_foreign_key "order_detais", "orders"
   add_foreign_key "order_detais", "products"
   add_foreign_key "orders", "users"
