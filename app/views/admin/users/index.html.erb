@@ -1,20 +1,29 @@
-<%= provide :title, t("list_categories") %>
+<%= provide :title, t("list_users") %>
 <div class="row">
   <div class="col-lg-12 grid-margin stretch-card">
     <div class="card">
       <div class="card-body">
         <div class="overflow_hidden">
-          <h1 class="float_left"><%= t "list_categories" %></h1>
-          <%= link_to t("add_category"), new_admin_category_path, class: "btn btn-primary float_right" %>
+          <h1 class="float_left"><%= t "list_users" %></h1>
+          <%= link_to t("add_user"), new_admin_user_path, class: "btn btn-primary float_right" %>
         </div>
         <table class="table table-bordered">
           <thead>
             <tr>
               <th>
-                <%= t "id_category" %>
+                <%= t "id_user" %>
               </th>
               <th>
-                <%= t "categories" %>
+                <%= t "users" %>
+              </th>
+              <th>
+                <%= t "images" %>
+              </th>
+              <th>
+                <%= t "email" %>
+              </th>
+              <th>
+                <%= t "role" %>
               </th>
               <th>
                 <%= t "actions" %>
@@ -22,7 +31,7 @@
             </tr>
           </thead>
           <tbody>
-            <%= render @categories %>
+            <%= render @users %>
           </tbody>
         </table>
         <div class="margin_bottom20px float_right">

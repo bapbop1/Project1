@@ -46,14 +46,14 @@
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="pages/charts/chartjs.html">
-        <span class="menu-title">Charts</span>
-        <i class="mdi mdi-chart-bar menu-icon"></i>
-      </a>
+      <%= link_to admin_users_path, class: 'nav-link' do %>
+        <span class="menu-title">Users</span>
+        <i class="mdi mdi-table-large menu-icon"></i>
+      <% end %>
     </li>
     <li class="nav-item">
-      <%= link_to admin_categories_path, class: "nav-link" do %>
-        <span class="menu-title"><%= t"categories" %></span>
+      <%= link_to admin_categories_path, class: 'nav-link' do %>
+        <span class="menu-title">Categories</span>
         <i class="mdi mdi-table-large menu-icon"></i>
       <% end %>
     </li>

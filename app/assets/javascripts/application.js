@@ -10,14 +10,12 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require bootstrap.min
-//= require jquery
-//= require jquery-1.10.2.min
-//= require jquery.carouFredSel-6.2.1-packed
-//= require jquery.easing.1.3
-//= require jquery.flexslider
-//= require jquery.sequence-min
 //= require rails-ujs
-//= require script.min
-//= require toastr
 //= require turbolinks
+//= require jquery-1.10.2.min
+//= require jquery.easing.1.3
+//= require bootstrap.min
+//= require jquery.sequence-min
+//= require jquery.carouFredSel-6.2.1-packed
+//= require jquery.flexslider
+//= require script.min
