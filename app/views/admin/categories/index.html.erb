@@ -11,10 +11,10 @@
           <thead>
             <tr>
               <th>
-                <%= t "categories" %>
+                <%= t "id_category" %>
               </th>
               <th>
-                <%= t "status" %>
+                <%= t "categories" %>
               </th>
               <th>
                 <%= t "actions" %>
@@ -26,7 +26,7 @@
           </tbody>
         </table>
         <div class="margin_bottom20px float_right">
-          <%= paginate @categories, theme: 'twitter-bootstrap-3' %>
+          <%= will_paginate %>
         </div>
       </div>
     </div>
