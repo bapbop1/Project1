@@ -11,6 +11,7 @@ module Admin
       user = User.find_by email: params[:session][:email].downcase
       if user && user.authenticate(params[:session][:password]) && user.role == Settings.setting_model.role_admin
         log_in user
+        params[:session][:remember_me] == '1' ? remember(user) : forget(user)
         redirect_back_or admin_root_url
       else
         flash.now[:danger] = t "invalid"

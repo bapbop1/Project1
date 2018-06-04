@@ -16,11 +16,20 @@
     </div>
     <ul class="navbar-nav navbar-nav-right">
       <li class="nav-item nav-profile dropdown">
-        <%= link_to(admin_logout_path, method: :delete, class: "nav-link dropdown-toggle", id: "profileDropdown")  do %>
+        <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
           <div class="nav-profile-text">
-            <p class="mb-1 text-black">Log out</p>
+            <p class="mb-1 text-black"><%= session[:user_name] %></p>
           </div>
-        <% end %>
+        </a>
+        <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
+          <div class="dropdown-divider"></div>
+          <%= link_to(admin_logout_path, method: :delete, class: "dropdown-item")  do %>
+            <div class="nav-profile-text">
+              <i class="mdi mdi-logout mr-2 text-primary"></i>
+              Signout
+            </div>
+          <% end %>
+        </div>
       </li>
       <li class="nav-item d-none d-lg-block full-screen-link">
         <a class="nav-link">
