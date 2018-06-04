@@ -1391,13 +1391,19 @@ ul.dropdown-menu>li>a:hover {
 }
 
 .list_bottom {
-    position: relative;
-    width: 100%;
-    padding-top: 10px;
+  position: relative;
+  width: 100%;
+  padding-top: 10px;
 }
 
 .list_bottom .button_group {
-    width: auto;
+  width: auto;
+}
+
+.products .price_old {
+  text-align: center;
+  font-size: 15px;
+  text-decoration: line-through;
 }
 
 .product-list-description .price {

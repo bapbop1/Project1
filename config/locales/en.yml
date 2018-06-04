@@ -1,33 +1,3 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
 en:
   create_success: "Create success"
   update_success: "Update success"
@@ -42,23 +12,122 @@ en:
   list_categories: "List categories"
   id_category: "ID category"
   categories: "Categories"
-  id_category: "ID user"
-  categories: "Users"
   actions: "Actions"
   add_category: "Add category"
   create_category: "Create category"
   base_title: "Shop"
+  form_contain: "The form contains"
+  hello: "Hello world"
+  base_title: "Ruby on Rails Tutorial Sample App"
+  ruby_tutorial: "Ruby on Rails Tutorial"
+  about: "About"
+  contact: "Contact"
+  news: "News"
+  author: "Michael Hartl"
+  home: "Home"
+  help: "Help"
   login: "Login"
-  invalid: "Invalid email/password combination"
-  logout: "Log out"
-  please_login: "Please Log in"
-  not_permit: "You are not allowed"
-  list_users: "List users"
-  add_user: "Add user"
-  create_user: "Create user"
-  save_user: "Save user"
-  edit_user: "Edit user"
+  contact_page: "Contact page"
+  contact_text: "Contact the Ruby on Rails Tutorial about the sample app at the"
+  get_help: "Get help on the Ruby on Rails Tutorial at the"
+  see_help: "To get help on this sample app, see the"
+  rails_tutorial: "Rails Tutorial help section"
+  wellcome: "Welcome to the Sample App"
+  home_page: "This is the home page for the"
+  sample_application.: "sample application."
+  sign_up: "Sign up now!"
+  rails_logo: "Rails logo"
+  ruby_on_rails: "Ruby on Rails"
+  book: "book"
+  screencast: "screencast series"
+  sample_app: "This is the sample application for the tutorial."
+  teach_web: "to teach web development with"
+  user_new: "Users#new"
+  find_me: "Find me in app/views/users/new.html.erb"
   email: "Email"
-  role: "Role"
-  profile_updated: "updated"
-
+  name: "Name"
+  password: "Password"
+  confirmation_pw: "Confirmation"
+  signup: "Sign up"
+  create_acount: "Create my account"
+  title_login: "Log in"
+  new_user: "New user?"
+  invalid_user: "Invalid email/password combination"
+  the: "The"
+  by: "by"
+  profile: "Profile"
+  users: "Users"
+  logout: "Log out"
+  settings: "Settings"
+  profile_updated: "Profile updated"
+  user_deleted: "User deleted"
+  please_login: "Please login"
+  change: "change"
+  upadte_profile: "Upadte profile"
+  save_change: "Save changes"
+  edit_user: "Edit user"
+  sample_app: "sample app"
+  sample_app_tolow : "SAMPLE APP"
+  acount: "Account"
+  the_form_contains: "The form contains"
+  profile_updated: "Profile updated"
+  is_a: "is a"
+  and: "and"
+  to_web: "to teach web development with"
+  this_smp_app: "This is the sample application for the turorial"
+  contact_smp_app: "Contact the Ruby on Rails Tutorial about the sample app at the"
+  get_help: "Get help on the Ruby on Rails Tutorial at the"
+  to_get_help: "To get help on this sample app, see the"
+  delete: "delete"
+  sure: "You sure?"
+  all_user: "All users"
+  flast_info_check: "Please check your email to activate your account."
+  user_deleted: "User deleted"
+  please_login: "Please log in."
+  check_your_amail: "Check your email for the activation link."
+  account_not_activeted: "Account not activated."
+  invalid_activation: "Invalid activation link"
+  account_activated: "Account activated!"
+  remember_me: "Remember me on this computer"
+  Invalid_login: "Invalid email/password combination"
+  welcome_click_activate: "Welcome to the Sample App! Click on the link below to activate your account:"
+  full_name: Full Name
+  register: Register
+  empty_cart: "Empty cart"
+  success_add_cart: "Add to cart success"
+  shopping_cart: "Shopping Cart"
+  images: "Images"
+  details: "Details"
+  price: "Price"
+  quantity: "Quantity"
+  continue_shoping: "Continue Shopping"
+  updates_shoping: "Update Shopping Cart"
+  cart: "Cart"
+  total: "Total"
+  add_to_cart: "Add To Cart"
+  checkout: "CheckOut"
+  not_found_cate: "Not found Category"
+  not_found_product: "Not found Product"
+  hot: "Hot"
+  our: "Our"
+  brands: "Brands"
+  products: "Products"
+  paris: "Paris show 2014"
+  collection: "Collection For Winter"
+  lorem_first: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+  lorem_second: "Lorem Ipsum is simply dummy text of the printing and typesetting"
+  more_deail: "More Details"
+  shop: "Shop"
+  designed: "Copyright © 2012. Designed by Michael Lee. All rights reseved"
+  navigation: "Toggle navigation"
+  get_out: "Get Our"
+  newsletter: "Newsletter"
+  infomation: "Infomation"
+  customer: "Customer"
+  support: "support"
+  value_email: "nguyen.huu.hau@framgia.com"
+  submit: "Submit"
+  comments: "Create comments success"
+  comments_error: "Create comments error"
+  need_login: "You need login before create comment"
+  your_name: "Your Name"

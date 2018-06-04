@@ -1,0 +1,15 @@
+<% provide :title, @category.name %>
+<div class="clearfix"></div>
+<div class="container_fullwidth">
+  <div class="container">
+    <div class="hot-products">
+      <h3 class="title"><strong><%= @category.name %></strong></h3>
+      <div class="row">
+       <%= render @products %>
+      </div>
+       <%= paginate @products, theme: "twitter-bootstrap-3" %>
+    </div>
+    <div class="clearfix"></div>
+    <div class="clearfix"></div>
+  </div>
+</div>

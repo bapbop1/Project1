@@ -1,24 +1,32 @@
-<% provide(:title, t("login")) %>
-<div class="login">
-  <div class="login__check"><img src="Untitled-1.png" style="width: 63%"></div>
-  <div class="login__form">
-    <%= form_for(:session, url: login_path) do |f| %>
-      <div class="login__row">
-        <svg class="login__icon name svg-icon" viewBox="0 0 20 20">
-          <path d="M0,20 a10,8 0 0,1 20,0z M10,0 a4,4 0 0,1 0,8 a4,4 0 0,1 0,-8" />
-        </svg>
-        <%= f.label :email %>
-        <%= f.email_field :email, class: "login__input name" %>
+<% provide :title, t("login") %>
+<div class="page-index">
+  <div class="container">
+    <p>
+      <%= t "acount" %>
+    </p>
+  </div>
+</div>
+<div class="container_fullwidth">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="checkout-page">
+          <ol class="checkout-steps">
+            <li class="steps active">
+              <a href="#" class="step-title">
+              <%= t "acount" %>
+              </a>
+              <div class="step-description">
+                <div class="row">
+                   <%= render "login" %>
+                </div>
+              </div>
+            </li>
+          </ol>
+        </div>
       </div>
-      <div class="login__row">
-        <svg class="login__icon pass svg-icon" viewBox="0 0 20 20">
-          <path d="M0,20 20,20 20,8 0,8z M10,13 10,16z M4,8 a6,8 0 0,1 12,0" />
-        </svg>
-        <input type="password" class="login__input pass form-control" placeholder="Password" id="Passwod" />
-        <i class="view-pass fa fa-eye" style="  display: none;"></i>
-      </div>
-      <button type="button" class="login__submit">Sign in</button>
-      <p class="login__signup">Don't have an account? &nbsp;<a>Sign up</a></p>
-    <%= end %>
+    </div>
+    <div class="clearfix">
+    </div>
   </div>
 </div>
